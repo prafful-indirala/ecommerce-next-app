@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 flex flex-col min-h-screen`}>
+      <body className={`${inter.className} bg-gray-50 flex flex-col min-h-screen text-base sm:text-lg`}>
         <AuthProvider>
           <CartProvider>
             <Header />

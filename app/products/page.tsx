@@ -56,7 +56,7 @@ export default function Products() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h1 className="text-3xl font-bold mb-8">Our Products</h1>
       <div className="mb-8 flex flex-wrap gap-4">
         <select
@@ -108,7 +108,7 @@ export default function Products() {
           Apply Filters
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
         {filteredProducts.map((product) => (
           <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image src={product.image} alt={product.name} width={300} height={300} className="w-full h-48 object-cover" />

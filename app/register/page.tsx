@@ -26,9 +26,9 @@ export default function Register() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h1 className="text-3xl font-bold mb-8 text-center">Register</h1>
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+      <form onSubmit={handleSubmit} className="max-w-md mx-auto w-full">
         <div className="mb-4">
           <label htmlFor="email" className="block mb-2">Email</label>
           <input

@@ -46,11 +46,11 @@ const brands = [
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <section className="py-12">
         <h1 className="text-4xl font-bold text-center mb-8">Welcome to VapeWholesale</h1>
         <p className="text-xl text-center mb-12 text-gray-600">Your trusted source for premium, eco-friendly vaping products</p>
-
+        
         <div className="mb-12">
           <ImageSlider images={sliderImages} />
         </div>
@@ -63,7 +63,7 @@ export default function Home() {
         {/* EXCLUSIVE COLLECTIONS */}
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-6">Exclusive Collections</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {featuredProducts.map((product) => (
               <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <Image src={product.image} alt={product.name} width={300} height={300} className="w-full h-48 object-cover" />
@@ -82,7 +82,7 @@ export default function Home() {
         {/* NEW ARRIVALS */}
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-6">New Arrivals</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {newArrivals.map((product) => (
               <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <Image src={product.image} alt={product.name} width={300} height={300} className="w-full h-48 object-cover" />
@@ -101,7 +101,7 @@ export default function Home() {
         {/* TOP DEALS */}
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-6">Top Deals</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {topDeals.map((product) => (
               <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <Image src={product.image} alt={product.name} width={300} height={300} className="w-full h-48 object-cover" />
@@ -123,7 +123,7 @@ export default function Home() {
         {/* OUR BEST SELLING PRODUCTS */}
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-6">Our Best Selling Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {bestSellers.map((product) => (
               <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <Image src={product.image} alt={product.name} width={300} height={300} className="w-full h-48 object-cover" />
@@ -142,7 +142,7 @@ export default function Home() {
         {/* OUR BRANDS */}
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-6">Our Brands</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
             {brands.map((brand) => (
               <div key={brand.id} className="bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
                 <Image src={brand.logo} alt={brand.name} width={150} height={150} className="max-w-full h-auto" />
@@ -155,7 +155,7 @@ export default function Home() {
         <section className="bg-gray-100 p-8 rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">Subscribe to Our Newsletter</h2>
           <p className="text-gray-600 mb-6">Stay updated with our latest products, deals, and industry news.</p>
-          <form className="flex flex-col md:flex-row gap-4">
+          <form className="flex flex-col sm:flex-row gap-4">
             <input
               type="email"
               placeholder="Enter your email"
